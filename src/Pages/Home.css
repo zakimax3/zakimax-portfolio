@@ -1,5 +1,5 @@
 .PersonalPhotoDiv {
-    background-color: rgb(45, 118, 197);
+    background-color: rgb(195, 189, 12);
     width: 80%;
     height: 50%;
     border-radius: 80% 30%;
@@ -27,6 +27,17 @@
 
 
 .pText{
-    color: blue;
-    font-size:30px;
+    color: rgb(195, 189, 12);
+    font-size:22px;
+    font-family: "AlfaSlabOne";
+
+}
+
+.SpanA{
+    color: #FFFFFF;
+}
+
+.FlexDiv{
+    display: flex; 
+    flex-direction: column;
 }

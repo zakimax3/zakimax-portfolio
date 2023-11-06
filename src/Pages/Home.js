@@ -16,8 +16,10 @@ export function Home() {
 
                     </div>
 
-                    <div className="col-12 col-lg-6 centerDiv">
-                        <p className="pText"> My Name Is <span> Zaki Mohammed </span>  ( <span>Zaki Max</span> ) </p>
+                    <div className="col-12 col-lg-6 centerDiv FlexDiv">
+                        <p className="pText"> My Name Is : <span className="SpanA" > Zaki Mohammed </span>  - (<span className="SpanA">  Zaki Max </span>) </p>
+                        <p className="pText" > Information Engineer <span>👨‍💻👷</span></p>
+                        <p></p>
 
 
                     </div>

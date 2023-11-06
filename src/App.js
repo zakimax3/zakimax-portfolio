@@ -1,6 +1,6 @@
 import './App.css';
 import Router from './Components/Router';
-
+import './Components/SharedFile.css';
 
 function App() {
   return (
