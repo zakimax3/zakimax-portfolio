@@ -1,13 +1,25 @@
-.PersonalPhotoDiv {
-    background-color: rgb(195, 189, 12);
-    width: 80%;
-    height: 50%;
-    border-radius: 80% 30%;
+
+.CoverHome {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 
+.PersonalPhotoDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-
+.PersonalPhotoDivI {
+    background-color: rgb(195, 189, 12);
+    width: 80vw;
+    height: 50vh;
+    border-radius: 80% 30%;
+}
 
 .PersonalPhotoImg {
     width: 75%;
@@ -15,29 +27,34 @@
     transform: rotate(-15deg);
 }
 
-.cont {
-    min-height: 100vh;
-}
 
-.centerDiv {
+.DescriptionDiv{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
+
 }
 
-
-.pText{
+.DescriptionDiv p{
     color: rgb(195, 189, 12);
-    font-size:22px;
+    font-size:1.25rem;
     font-family: "AlfaSlabOne";
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
 }
 
-.SpanA{
+.DescriptionDiv p p{
+  display: inline;
+  white-space:nowrap;
+}
+
+.DescriptionDiv Span{
     color: #FFFFFF;
 }
 
-.FlexDiv{
-    display: flex; 
-    flex-direction: column;
-}
+
+
+

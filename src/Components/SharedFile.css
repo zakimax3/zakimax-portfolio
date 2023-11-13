@@ -7,3 +7,8 @@
     font-family: "AlfaSlabOne";
     src: url("../../public/Files/Fonts/AlfaSlabOne.ttf");
 }
+
+.Cover{
+    min-height: 100vh;
+    width: 100vw;
+}

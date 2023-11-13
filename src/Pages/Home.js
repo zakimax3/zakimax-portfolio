@@ -1,30 +1,27 @@
 import "./Home.css";
 import MainContener from "../Layout/MainContener";
 
-export function Home() {
+function Home() {
     return (
         <MainContener >
-            <div className="container cont">
-                <div className="row cont">
+            <div className="container">
+                <div className="row CoverHome">
 
-                    <div className="col-12 col-lg-6 centerDiv">
+                    <div className="col-12 col-lg-6 PersonalPhotoDiv">
 
-                        <div className="PersonalPhotoDiv">
+                        <div className="PersonalPhotoDivI">
                         <img className="PersonalPhotoImg" src="Files/Photo/zakimax.png" alt="Not Found" />
                         </div>
 
 
                     </div>
 
-                    <div className="col-12 col-lg-6 centerDiv FlexDiv">
-                        <p className="pText"> My Name Is : <span className="SpanA" > Zaki Mohammed </span>  - (<span className="SpanA">  Zaki Max </span>) </p>
-                        <p className="pText" > Information Engineer <span>👨‍💻👷</span></p>
-                        <p></p>
+                    <div className="col-12 col-lg-6 DescriptionDiv">
 
+                        <p ><p>My Name Is : <span > Zaki Mohammed </span> </p> <p>- (<span>  Zaki Max </span>) </p></p> 
+                        <p > Information Engineer <span>👨‍💻👷</span></p>
 
                     </div>
-
-
 
                 </div>
 

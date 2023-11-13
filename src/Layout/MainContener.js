@@ -1,6 +1,5 @@
 import React from 'react'
 import NavBar from '../Components/NavBar';
-import { RouterProvider } from 'react-router-dom';
 
 function MainContener(props) {
   return (
@@ -9,6 +8,7 @@ function MainContener(props) {
         <div>
             {props.children}
         </div>
+
         <NavBar />
 
     </div>

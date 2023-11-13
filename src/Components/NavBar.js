@@ -1,5 +1,5 @@
 import React from 'react';
-import 'bootstrap';
+// import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import {Link } from "react-router-dom";
 import './NavBar.css';
@@ -21,16 +21,46 @@ function NavBar(){
                                     <span className="navbar-toggler-icon"></span>
                                 </button>
 
-                                <Link to="/" >
-                                    <p className="navbar-brand NavBarName">Zaki Max</p>
+                                <Link to="/" className='NavBarName' >
+                                    <p className="navbar-brand" ><img className='Icons' src="Files/ICONS/manager.png" alt="No" />  Zaki Max </p>
                                 </Link>
 
                                 <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
-                                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <ul className="navbar-nav me-auto mb-2 mb-lg-0 FlexContainer">
 
                                         <li  className="nav-item " >
-                                            <Link  to="/home" className="nav-link active NavHomeElement" aria-current="page" s={String(state.selectedMenu==='/home')} >Home</Link>
+                                            <Link  to="/home" className="nav-link active NavElement" aria-current="page" s={String(state.selectedMenu==='/home')} ><img className='Icons' src="Files/ICONS/home.png" alt="No" /> Home</Link>
                                         </li>
+
+                                        <li  className="nav-item " >
+                                            <Link  to="/about" className="nav-link active NavElement" aria-current="page" s={String(state.selectedMenu==='/about')} ><img className='Icons' src="Files/ICONS/resume.png" alt="No" /> About</Link>
+                                        </li>
+
+                                        <li  className="nav-item " >
+                                            <Link  to="/posts" className="nav-link active NavElement" aria-current="page" s={String(state.selectedMenu==='/posts')} ><img className='Icons' src="Files/ICONS/blogging.png" alt="No" /> Posts</Link>
+                                        </li>
+
+                                        <li  className="nav-item " >
+                                            <Link  to="/projects" className="nav-link active NavElement" aria-current="page" s={String(state.selectedMenu==='/projects')} ><img className='Icons' src="Files/ICONS/project-plan.png" alt="No" /> Projects</Link>
+                                        </li>
+
+                                        <li  className="nav-item " >
+                                            <Link  to="/services" className="nav-link active NavElement" aria-current="page" s={String(state.selectedMenu==='/services')} ><img className='Icons' src="Files/ICONS/digital-services.png" alt="No" /> Services</Link>
+                                        </li>
+
+                                        <li  className="nav-item " >
+                                            <Link  to="/events" className="nav-link active NavElement" aria-current="page" s={String(state.selectedMenu==='/events')} ><img className='Icons' src="Files/ICONS/event.png" alt="No" /> Events</Link>
+                                        </li>
+
+                                        <li  className="nav-item " >
+                                            <Link  to="/mycv" className="nav-link active NavElement" aria-current="page" s={String(state.selectedMenu==='/mycv')} ><img className='Icons' src="Files/ICONS/cv.png" alt="No" /> My CV</Link>
+                                        </li>
+
+                                        <li  className="nav-item " >
+                                            <Link  to="/contact" className="nav-link active NavElement" aria-current="page" s={String(state.selectedMenu==='/contact')} ><img className='Icons' src="Files/ICONS/contact.png" alt="No" /> Contact</Link>
+                                        </li>
+
+
 
                                         
 
@@ -43,6 +73,8 @@ function NavBar(){
                                 </div>
                     </div>
                 </nav>
+
+                
         </div>
     );
 };

@@ -1,80 +1,216 @@
-
-@media screen and (min-width: 993px) {
+@media screen and (width < 992px) {
 
     .NavBarName{
-        margin: 30px;
-        font-size: 30px !important; 
+        margin: 2px;
+        padding: 1px 30px;
+        font-size: 3vw !important; 
         font-family: "AlfaSlabOne";
+        border: 5px solid black;
+        border-radius: 20%;
+        text-shadow: 10px 0 8px rgb(9, 20, 235);
+        text-decoration:none !important;
     }
+
+    .NavBarName p{
+        margin: 0;
+    }
+
+
+.NavBarMain {
+    position: fixed;
+    bottom: 0;
+    width: calc(100vw - 40px);
+    background-color:rgb(195, 189, 12) !important;
+    color: rgb(0, 0, 0) !important;
+    font-size: 4vw !important; 
+    font-family: "Anton";
+    margin: 20px;
+
+}
+
+.NavElement{
+    text-wrap: nowrap;
+}
+
+.NavElement:hover {
+    background-color: rgba(252, 3, 3, 0.935);
+    transition: 0.5s;
+    border: 1px solid black;
+    border-radius: 10% / 50% ;
+}
+
+
+.NavElement[s='true']:not(:hover) {
+    background-color: red;
+    transition: 0.5s;
+    flex-shrink: 0;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.Icons{
+    height: 4vw;
+    width: 4vw;
+}
+
+}
+
+@media screen  and (width >=992px ) {
+
+    .NavBarName{
+        margin: 10px;
+        padding: 1px 15px;
+        font-family: "AlfaSlabOne";
+        border: 5px solid black;
+        border-radius: 20%;
+        text-shadow: 10px 0 8px rgb(9, 20, 235);
+        text-decoration:none !important;
+    }
+
+    .NavBarName p{
+        font-size: 2.1vw !important; 
+        margin: 0;
+    }
+
+
+
+
+.NavBarMain {
+    position: fixed;
+    bottom: 0;
+    width: calc(100vw - 40px);
+    background-color:rgb(195, 189, 12) !important;
+    color: rgb(0, 0, 0) !important;
+    font-size: 1.5vw !important; 
+    font-family: "Anton";
+    margin: 20px;
+    height: 90px;
+
+}
+
+
+.FlexContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+
+.Icons{
+    height: 2.4vw;
+    width: 2.4vw;
+}
+
+.NavElement{
+    text-wrap: nowrap;
+}
+
+.NavElement:hover {
+    background-color: rgba(252, 3, 3, 0.935);
+    margin-bottom: 100px;
+    padding-bottom: 110px;
+    transition: 0.5s;
+    border: 1px solid black;
+    border-radius: 10% / 50% ;
+    width: 10vw;
+}
+
+
+.NavElement[s='true']:not(:hover) {
+    background-color: red;
+    margin-bottom: 100px;
+    padding-bottom: 110px;
+    transition: 0.5s;  
+    flex-shrink: 0;
+    width: 12vw;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+
+
+}
+
+
+
+
+@media screen  and (width >=1500px ) {
+
+    .NavBarName{
+        margin: 15px;
+        padding: 1px 15px;
+        font-family: "AlfaSlabOne";
+        border: 5px solid black;
+        border-radius: 20%;
+        text-shadow: 10px 0 8px rgb(9, 20, 235);
+        text-decoration:none !important;
+
+
+    }
+
+    .NavBarName p{
+        font-size:2vw !important; 
+        margin: 0;
+    }
+
+
     .NavBarMain {
-        position: fixed;
-        bottom: 0;
-        width: calc(100vw - 40px);
-        background-color:rgb(195, 189, 12) !important;
-        color: rgb(0, 0, 0) !important;
-        font-size: 30px !important; 
-        font-family: "Anton";
-        margin: 20px;
-        height: 80px;
-        
-    }
-    
-    
-    .NavHomeElement{
-        margin: 13px;
-        padding: 12px;
-        width: 220px;
-    }
-    
-    .NavHomeElement:hover {
-        background-color: red;
-        margin-bottom: 80px;
-        padding-bottom: 90px;
-        transition: 0.5s;
-    }
+    position: fixed;
+    bottom: 0;
+    width: calc(100vw - 40px);
+    background-color:rgb(195, 189, 12) !important;
+    color: rgb(0, 0, 0) !important;
+    font-size: 1.75vw !important; 
+    font-family: "Anton";
+    margin: 20px;
+    height: 12vh;
 
-    .NavHomeElement[s='true']:not(:hover) {
-        background-color: red;
-        margin-bottom: 80px;
-        padding-bottom: 90px;
-        transition: 0.5s;    }
-
-
-  }
-
-
-
-@media screen and (max-width: 992px) {
-    .NavBarMain {
-        position: fixed;
-        bottom: 0;
-        width: calc(100vw - 40px);
-        background-color:rgb(195, 189, 12) !important;
-        color: rgb(0, 0, 0) !important;
-        font-size: 30px !important; 
-        font-family: "Anton";
-        margin: 20px;
-        
-    }
-    
-    
-
-    
-    .NavHomeElement:hover {
-        background-color: red;
-        transition: 0.5s;
-        width: calc(100vw - 65px);
     }
 
 
+.FlexContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+}
 
 
-    .NavHomeElement[s='true']:not(:hover) {
-        background-color: red;
-        transition: 0.5s;
-        width: calc(100vw - 65px);
-    }
+.Icons{
+    height: 2.5vw;
+    width: 2.5vw;
+}
+
+.NavElement{
+    text-wrap: nowrap;
+
+}
+
+.NavElement:hover {
+    background-color: rgba(252, 3, 3, 0.935);
+    margin-bottom: 130px;
+    padding-bottom: 140px;
+    transition: 0.5s;
+    border: 1px solid black;
+    border-radius: 10% / 50% ;
+    width: 11vw;
+}
+
+
+.NavElement[s='true']:not(:hover) {
+    background-color: rgb(255, 0, 0);
+    margin-bottom: 130px;
+    padding-bottom: 140px;
+    transition: 0.5s;  
+    flex-shrink: 0;
+    width: 13vw;
+    border: 1px solid black;
+    border-radius: 30px;
+}
 
 
 
-  }
+}
